@@ -6,5 +6,5 @@ npm install -g @angular/cli
 # Install project dependencies
 npm install
 
-# Build the Angular project
-ng build --configuration production
+# Build the Angular project using npx
+npx ng build --configuration production
