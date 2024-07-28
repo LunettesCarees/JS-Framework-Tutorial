@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const routes = require('./routes/app.routes');
 
 const corsOpt = {
     origin: 'https://js-framework-tutorial-stripe.onrender.com',
@@ -12,7 +13,7 @@ const corsOpt = {
 
 app.use(cors(corsOpt));
 app.use(express.json());
-app.use("/api", require("./routes/app.routes"));
+app.use("/api", routes);
 
 app.listen(4000, () => {
     console.log("Server is running on port 4000");
