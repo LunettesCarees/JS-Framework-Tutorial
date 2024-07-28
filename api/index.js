@@ -5,7 +5,7 @@ const app = express();
 const cors = require('cors');
 
 const corsOpt = {
-    origin: '*',
+    origin: 'https://js-framework-tutorial-stripe.onrender.com',
     methods: ['POST'],
     allowedHeaders: ['Content-Type', 'Access-Control-Allow-Origin', 'Origin'],
 };
